@@ -1,10 +1,10 @@
 
 const express = require("express");
 
-const { getFilms } = require("../controllers/film");
+const { addTestRoute } = require("../controllers/test");
 
 const router = express.Router();
 
-router.get("/film", getFilms);
+router.post("/addTest", addTestRoute);
 
 module.exports = router;
